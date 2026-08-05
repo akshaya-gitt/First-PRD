@@ -3,9 +3,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // ==========================================================
-        // Candidate Profile
-        // ==========================================================
         String candidateName = "Aarav";
         int registrationNumber = 24031;
         String degree = "B.E. Computer Science";
@@ -24,9 +21,6 @@ public class Main {
         boolean projectCompleted = true;
         boolean profileVerified = true;
 
-        // ==========================================================
-        // Percentage Calculations
-        // ==========================================================
         double aptitudePercentage
                 = (double) aptitudeCorrectAnswers
                 / aptitudeTotalQuestions * 100;
@@ -35,9 +29,6 @@ public class Main {
                 = (double) codingTestCasesPassed
                 / codingTotalTestCases * 100;
 
-        // ==========================================================
-        // Eligibility Conditions
-        // ==========================================================
         boolean degreeEligible
                 = degreePercentage >= 60;
 
@@ -73,9 +64,6 @@ public class Main {
                 && projectEligible
                 && verificationEligible;
 
-        // ==========================================================
-        // Report
-        // ==========================================================
         System.out.println("================================================");
         System.out.println("      CAMPUS PLACEMENT APPLICATION REPORT");
         System.out.println("================================================");
@@ -161,9 +149,6 @@ public class Main {
         System.out.println();
         System.out.println("------------------------------------------------");
 
-        // ==========================================================
-        // Final Decision
-        // ==========================================================
         if (!degreeEligible) {
 
             System.out.println("Application Status      : Not Eligible");
